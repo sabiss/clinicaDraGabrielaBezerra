@@ -1,11 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dra. Gabriela Bezerra</title>
-    <link rel="shortcut icon" type="imagex/png" href="./assets/icons8-gostar-32.png">
-</head>
-<body>
-</body>
+    <link
+      rel="shortcut icon"
+      type="imagex/png"
+      href="./assets/icons8-gostar-32.png"
+    />
+    <!--Googe Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <!--Instalação do tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex flex-col">
+    <header
+      class="flex justify-between w-screen max-h-32 items-center bg-[#F5F5F5] font-prata relative"
+    >
+      <img
+        src="../assets/logo1.png"
+        class="object-contain w-60 box-border"
+        alt="logo da clínica"
+      />
+
+      <nav class="hidden lg:flex font-bold items-center pr-5">
+        <a href="#pilares" class="mr-5 hover:underline"
+          ><p>Pilares de Excelência</p></a
+        >
+        <a href="#redes" class="mr-5 hover:underline"><p>Me Acompanhe</p></a>
+        <a href="#localizacao" class="mr-5 hover:underline"
+          ><p>Onde Estamos</p></a
+        >
+        <a
+          href="#footer"
+          class="p-2 bg-[#003921] rounded-xl text-white hover:bg-[#012D1A]"
+          ><p>Agendar Consulta</p></a
+        >
+      </nav>
+
+      <!-- Botão do menu hamburguer visível apenas em telas pequenas -->
+      <button
+        id="mobileMenuButton"
+        class="lg:hidden absolute top-0 right-0 p-4"
+      >
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
+
+      <!-- Menu hamburguer para telas pequenas -->
+      <div
+        id="mobileMenu"
+        class="hidden lg:hidden fixed inset-0 bg-[#F5F5F5] z-50"
+      >
+        <nav class="flex flex-col items-end p-4">
+          <!-- Botão de fechar com ícone de xis -->
+          <button
+            id="closeMobileMenu"
+            class="text-gray-500 hover:text-gray-700 focus:outline-none"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+          <a href="#pilares" class="mb-4 hover:underline"
+            ><p>Pilares de Excelência</p></a
+          >
+          <a href="#redes" class="mb-4 hover:underline"><p>Me Acompanhe</p></a>
+          <a href="#localizacao" class="mb-4 hover:underline"
+            ><p>Onde Estamos</p></a
+          >
+          <a
+            href="#footer"
+            class="p-2 bg-[#003921] rounded-xl text-white hover:bg-[#012D1A]"
+            ><p>Agendar Consulta</p></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main class="flex flex-col h-ful"></main>
+    <script src="./script.js"></script>
+  </body>
 </html>
