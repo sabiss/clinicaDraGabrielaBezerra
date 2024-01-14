@@ -13,21 +13,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Prata&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./style.css" />
     <!--Instalação do tailwind-->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="flex flex-col">
+  <body class="flex flex-col bg-[#EAEAEA]">
     <header
-      class="flex justify-between w-screen max-h-32 items-center bg-[#F5F5F5] font-prata relative"
+      class="flex justify-between h-32 items-center bg-[#F5F5F5] font-prata relative"
     >
       <img
         src="../assets/logo1.png"
@@ -112,7 +107,46 @@
         </nav>
       </div>
     </header>
-    <main class="flex flex-col h-ful"></main>
+    <main class="flex flex-col h-ful">
+      <section
+        id="sobre"
+        class="flex flex-col h-screen p-3 lg:flex-row lg:h-4/5 lg:pt-8"
+      >
+        <div class="flex flex-col justify-center items-center lg:w-1/2">
+          <h2
+            class="tituloDeApresentacao my-3 font-extrabold text-2xl lg:hidden"
+          >
+            Conheça a Dra. Gabriela Bezerra: Compromisso com a Excelência Médica
+          </h2>
+          <img
+            alt="foto da doutora Gabriela Bezerra de braços cruzados"
+            src="./assets/gabrielaOrganicForm.png"
+            class="w-80 lg:w-auto"
+          />
+        </div>
+        <div
+          class="p-4 lg:w-1/2 flex justify-center items-center flex-col lg:p-8"
+        >
+          <h2
+            class="tituloDeApresentacao my-3 font-extrabold text-2xl hidden lg:flex"
+          >
+            Conheça a Dra. Gabriela Bezerra: Compromisso com a Excelência Médica
+          </h2>
+          <p class="mt-5 text-justify textoSobreADra font-normal">
+            Dra. Gabriela Bezerra, médica formada na UFRN entre 2017 e 2023,
+            destaca-se por sua abordagem holística no cuidado com o paciente.
+            Cofundadora da Liga de Clínica Médica (Laclim) e ativa em ligas de
+            medicina, sua formação reflete compromisso com a excelência. Com
+            residência no SUS em São Paulo e atual busca por cardiologia, sua
+            paixão revela a constante busca por conhecimento para oferecer
+            cuidados excepcionais. Sua trajetória é marcada pela excelência
+            acadêmica e profundo respeito humano, garantindo um cuidado médico
+            personalizado e de qualidade. Descubra mais sobre a Dra. Gabriela e
+            inicie uma experiência de cuidado médico comprometido.
+          </p>
+        </div>
+      </section>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>
