@@ -2,6 +2,7 @@ header,
 .textoSobreADra {
   font-family: "Inter", sans-serif;
 }
-.tituloDeApresentacao {
+.tituloDeApresentacao,
+.pilarDedicacao {
   font-family: "Prata", serif;
 }
