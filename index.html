@@ -22,7 +22,7 @@
   </head>
   <body class="flex flex-col bg-[#EAEAEA]">
     <header
-      class="flex justify-between h-32 items-center bg-[#F5F5F5] font-prata relative"
+      class="flex justify-between h-32 items-center bg-[#F5F5F5] font-prata relative mb-5"
     >
       <img
         src="../assets/logo1.png"
@@ -31,7 +31,10 @@
       />
 
       <nav class="hidden lg:flex font-bold items-center pr-5">
-        <a href="#pilares" class="mr-5 hover:underline"
+        <a
+          href="#pilares"
+          class="mr-5 hover:underline"
+          onclick="rolar('pilares')"
           ><p>Pilares de Excelência</p></a
         >
         <a href="#redes" class="mr-5 hover:underline"><p>Me Acompanhe</p></a>
@@ -92,7 +95,7 @@
               ></path>
             </svg>
           </button>
-          <a href="#pilares" class="mb-4 hover:underline"
+          <a href="#pilares" class="mb-4 hover:underline" id="scrollToPilares"
             ><p>Pilares de Excelência</p></a
           >
           <a href="#redes" class="mb-4 hover:underline"><p>Me Acompanhe</p></a>
@@ -110,14 +113,14 @@
     <main class="flex flex-col h-ful">
       <section
         id="sobre"
-        class="flex flex-col h-screen p-3 lg:flex-row lg:h-4/5 lg:pt-8"
+        class="flex flex-col h-screen justify-around p-3 lg:flex-row lg:pt-8"
       >
+        <h2
+          class="tituloDeApresentacao my-3 mb-8 font-extrabold sm:text-2xl px-2 lg:hidden"
+        >
+          Conheça a Dra. Gabriela Bezerra: Compromisso com a Excelência Médica
+        </h2>
         <div class="flex flex-col justify-center items-center lg:w-1/2">
-          <h2
-            class="tituloDeApresentacao my-3 font-extrabold text-2xl px-2 lg:hidden"
-          >
-            Conheça a Dra. Gabriela Bezerra: Compromisso com a Excelência Médica
-          </h2>
           <img
             alt="foto da doutora Gabriela Bezerra de braços cruzados"
             src="./assets/gabrielaOrganicForm.png"
@@ -132,7 +135,9 @@
           >
             Conheça a Dra. Gabriela Bezerra: Compromisso com a Excelência Médica
           </h1>
-          <p class="mt-5 text-justify textoSobreADra font-normal lg:text-xl">
+          <p
+            class="my-5 text-justify sm:text-xl textoSobreADra font-normal lg:text-xl"
+          >
             Dra. Gabriela Bezerra, médica formada na UFRN entre 2017 e 2023,
             destaca-se por sua abordagem holística no cuidado com o paciente.
             Cofundadora da Liga de Clínica Médica (Laclim) e ativa em ligas de
@@ -146,6 +151,47 @@
           </p>
         </div>
       </section>
+      <section
+        id="pilares"
+        class="bg-[#FFFFFF] h-auto flex flex-col items-center lg:h-screen"
+      >
+        <div
+          class="flex flex-col lg:justify-center lg:flex-row-reverse lg:px-5 lg:pb-5 lg:h-full"
+        >
+          <div class="flex justify-center lg:w-1/2">
+            <img
+              src="./assets//dedicacao.jpg"
+              alt="doutora Gabriela sentada com os braços sobre a mesa onde há livros técnicos de medicina em cima"
+              class="rounded-b-3xl box-contain w-80 h-96 object-cover lg:h-[500px] lg:w-[400px]"
+            />
+          </div>
+          <div
+            class="mt-5 p-8 flex flex-col items-center justify-evenly lg:w-1/2"
+          >
+            <h2
+              class="pilarDedicacao font-extrabold sm: text-2xl mb-5 lg:text-4xl"
+            >
+              Dedicação
+            </h2>
+            <p class="text-justify lg:text-xl sm:text-xl">
+              é amplamente reconhecida pela sua
+              <span class="bg-[#003921] text-white p-1 font-bold rounded-lg"
+                >dedicação</span
+              >
+              incansável aos estudos, um alicerce fundamental em sua abordagem
+              profissional. Sua incessante busca por conhecimento não apenas a
+              distingue, mas também se traduz diretamente na excelência que
+              permeia cada aspecto de sua prática médica. Cada nova camada de
+              aprendizado que ela incorpora contribui para a sofisticação e a
+              eficácia dos cuidados que oferece, solidificando sua posição como
+              uma profissional comprometida com o aprimoramento contínuo em prol
+              do bem-estar de seus pacientes.
+            </p>
+          </div>
+        </div>
+        <div class="bg-[#3B775E] w-full h-32 mt-5 justify-self-end"></div>
+      </section>
+      <section class="h-auto lg:h-screen"></section>
     </main>
     <script src="./script.js"></script>
   </body>
