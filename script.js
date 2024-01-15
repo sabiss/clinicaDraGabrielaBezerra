@@ -1,16 +1,20 @@
 //abre e fecha menu hamburguer
+function abrirMobileMenu() {
+  const mobileMenu = document.getElementById("mobileMenu");
+  mobileMenu.classList.toggle("hidden");
+}
+
+function fecharMobileMenu() {
+  const mobileMenu = document.getElementById("mobileMenu");
+  mobileMenu.classList.add("hidden");
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const mobileMenuButton = document.getElementById("mobileMenuButton");
-  const mobileMenu = document.getElementById("mobileMenu");
-  const closeMobileMenuButton = document.getElementById("closeMobileMenu");
+  const fecharMobileMenuButton = document.getElementById("fecharMobileMenu");
 
-  mobileMenuButton.addEventListener("click", function () {
-    mobileMenu.classList.toggle("hidden");
-  });
-
-  closeMobileMenuButton.addEventListener("click", function () {
-    mobileMenu.classList.add("hidden");
-  });
+  mobileMenuButton.addEventListener("click", abrirMobileMenu);
+  fecharMobileMenuButton.addEventListener("click", fecharMobileMenu);
 });
 
 //rola a tela caso cliquem em um lin do nav bar
