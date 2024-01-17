@@ -171,10 +171,10 @@
       </section>
       <section
         id="pilares"
-        class="bg-[#FFFFFF] h-auto flex flex-col items-center lg:min-h-screen"
+        class="bg-[#FFFFFF] h-auto flex flex-col justify-between lg:min-h-screen"
       >
         <div
-          class="flex flex-col lg:justify-center lg:flex-row-reverse lg:px-5 lg:pb-5 lg:h-full"
+          class="flex flex-col lg:justify-center mb-5 lg:flex-row-reverse lg:px-5 lg:pb-5 lg:h-full box-border"
         >
           <div class="flex justify-center lg:w-1/2">
             <img
@@ -186,9 +186,7 @@
           <div
             class="mt-5 p-8 flex flex-col items-center justify-evenly lg:w-1/2"
           >
-            <h2
-              class="pilarDedicacao font-extrabold sm: text-2xl mb-5 lg:text-4xl"
-            >
+            <h2 class="pilarDedicacao font-extrabold text-2xl mb-5 lg:text-4xl">
               Dedicação
             </h2>
             <p class="text-justify lg:text-xl sm:text-xl">
@@ -207,9 +205,52 @@
             </p>
           </div>
         </div>
-        <div class="bg-[#3B775E] w-full h-32 mt-5 justify-self-end"></div>
+        <div class="bg-[#3B775E] w-full h-32"></div>
       </section>
-      <section class="h-auto lg:min-h-screen"></section>
+      <section class="flex h-auto p-4">
+        <div class="lg:hidden flex flex-col items-center">
+          <h2
+            class="font-extrabold text-2xl mb-5 lg:text-4xl pilarEspiritualidade"
+          >
+            Espiritualidade
+          </h2>
+          <img
+            src="./assets/espiritualidade.jpg"
+            class="rounded-tl-2xl rounded-br-2xl mb-8 md:w-96"
+            alt="gabriela com as mãis juntas ao rosto e com um terço entre elas"
+          />
+          <p class="text-justify lg:text-xl sm:text-xl">
+            Além de sua dedicação profissional, é uma pessoa religiosa que
+            incorpora os valores cristãos de bondade e amor ao próximo em sua
+            prática médica. Sua abordagem compassiva reflete a crença profunda
+            na importância de oferecer cuidado e compreensão, enriquecendo ainda
+            mais a experiência do paciente.
+          </p>
+        </div>
+        <div class="hidden lg:flex w-1/2 justify-center items-center p-4">
+          <img
+            src="./assets/espiritualidade.jpg"
+            class="rounded-tl-2xl rounded-br-2xl mb-8 w-[600px] sm:w-[400px]"
+            alt="gabriela com as mãis juntas ao rosto e com um terço entre elas"
+          />
+        </div>
+        <div
+          class="hidden lg:flex w-1/2 flex-col p-4 items-center justify-center box-border"
+        >
+          <h2
+            class="font-extrabold text-2xl mb-5 lg:text-4xl pilarEspiritualidade mt-5"
+          >
+            Espiritualidade
+          </h2>
+          <p class="text-justify lg:text-xl sm:text-xl">
+            Além de sua dedicação profissional, é uma pessoa religiosa que
+            incorpora os valores cristãos de bondade e amor ao próximo em sua
+            prática médica. Sua abordagem compassiva reflete a crença profunda
+            na importância de oferecer cuidado e compreensão, enriquecendo ainda
+            mais a experiência do paciente
+          </p>
+        </div>
+      </section>
     </main>
     <script src="./script.js"></script>
   </body>
