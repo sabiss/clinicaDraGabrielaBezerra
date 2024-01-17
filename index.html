@@ -134,7 +134,7 @@
         class="flex flex-col min-h-screen justify-around p-3 lg:flex-row lg:pt-8"
       >
         <h2
-          class="tituloDeApresentacao my-3 mb-8 font-extrabold sm:text-2xl px-2 lg:hidden"
+          class="tituloDeApresentacao my-3 mb-8 font-extrabold text-2xl sm:text-2xl px-2 lg:hidden"
         >
           Conheça a Dra. Gabriela Bezerra: Compromisso com a Excelência Médica
         </h2>
@@ -149,13 +149,11 @@
           class="p-4 lg:w-1/2 flex justify-center items-center flex-col lg:p-8"
         >
           <h1
-            class="tituloDeApresentacao my-3 text-left font-extrabold text-2xl hidden lg:flex lg:text-4xl"
+            class="tituloDeApresentacao my-3 text-left hidden lg:flex font-extrabold lg:text-2xl xl:text-3xl"
           >
             Conheça a Dra. Gabriela Bezerra: Compromisso com a Excelência Médica
           </h1>
-          <p
-            class="my-5 text-justify sm:text-xl textoSobreADra font-normal lg:text-xl"
-          >
+          <p class="my-5 text-justify textoSobreADra lg:text-lg">
             Dra. Gabriela Bezerra, médica formada na UFRN entre 2017 e 2023,
             destaca-se por sua abordagem holística no cuidado com o paciente.
             Cofundadora da Liga de Clínica Médica (Laclim) e ativa em ligas de
@@ -186,10 +184,12 @@
           <div
             class="mt-5 p-8 flex flex-col items-center justify-evenly lg:w-1/2"
           >
-            <h2 class="pilarDedicacao font-extrabold text-2xl mb-5 lg:text-4xl">
+            <h2
+              class="pilarDedicacao font-extrabold mb-8 text-xl lg:text-2xl xl:text-3xl"
+            >
               Dedicação
             </h2>
-            <p class="text-justify lg:text-xl sm:text-xl">
+            <p class="text-justify sm:text-xl lg:text-lg">
               é amplamente reconhecida pela sua
               <span class="bg-[#003921] text-white p-1 font-bold rounded-lg"
                 >dedicação</span
@@ -207,11 +207,9 @@
         </div>
         <div class="bg-[#3B775E] w-full h-32"></div>
       </section>
-      <section class="flex h-auto p-4">
-        <div class="lg:hidden flex flex-col items-center">
-          <h2
-            class="font-extrabold text-2xl mb-5 lg:text-4xl pilarEspiritualidade"
-          >
+      <section class="flex h-auto bg-[#FFFFFF]">
+        <div class="lg:hidden flex flex-col items-center p-4">
+          <h2 class="font-extrabold text-2xl mb-5 pilarEspiritualidade">
             Espiritualidade
           </h2>
           <img
@@ -227,28 +225,39 @@
             mais a experiência do paciente.
           </p>
         </div>
-        <div class="hidden lg:flex w-1/2 justify-center items-center p-4">
+        <div class="hidden lg:flex w-1/2 min-h-screen relative">
+          <div class="h-screen flex flex-col justify-between w-full z-0">
+            <div class="h-2/5 bg-[#3B775E] rounded-br-xl"></div>
+            <div class="h-2/5 bg-[#1A264E] rounded-r-xl"></div>
+          </div>
           <img
             src="./assets/espiritualidade.jpg"
-            class="rounded-tl-2xl rounded-br-2xl mb-8 w-[600px] sm:w-[400px]"
-            alt="gabriela com as mãis juntas ao rosto e com um terço entre elas"
+            alt=""
+            class="w-4/5 h-4/5 z-10 absolute rounded-xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
           />
         </div>
         <div
-          class="hidden lg:flex w-1/2 flex-col p-4 items-center justify-center box-border"
+          class="hidden lg:flex w-1/2 min-h-screen items-center justify-center"
         >
-          <h2
-            class="font-extrabold text-2xl mb-5 lg:text-4xl pilarEspiritualidade mt-5"
+          <div
+            class="flex flex-col items-center p-10 lg:w-[600px] xl:w-[800px]"
           >
-            Espiritualidade
-          </h2>
-          <p class="text-justify lg:text-xl sm:text-xl">
-            Além de sua dedicação profissional, é uma pessoa religiosa que
-            incorpora os valores cristãos de bondade e amor ao próximo em sua
-            prática médica. Sua abordagem compassiva reflete a crença profunda
-            na importância de oferecer cuidado e compreensão, enriquecendo ainda
-            mais a experiência do paciente
-          </p>
+            <h2
+              class="mb-8 pilarEspiritualidade font-extrabold lg:text-2xl xl:text-3xl"
+            >
+              Espiritualidade
+            </h2>
+            <p class="text-justify mt-4 lg:text-lg">
+              Além de dedicar-se intensamente à sua carreira, é importante
+              ressaltar que essa pessoa é também uma indivíduo religioso,
+              integrando os valores cristãos de bondade e amor ao próximo em sua
+              prática médica. Sua abordagem compassiva não é apenas uma
+              estratégia, mas sim uma expressão genuína de sua convicção
+              profunda na relevância de proporcionar cuidado e compreensão. Isso
+              não só aprimora, mas transforma positivamente a experiência do
+              paciente.
+            </p>
+          </div>
         </div>
       </section>
     </main>
