@@ -9,14 +9,7 @@
       type="imagex/png"
       href="./assets/icons8-gostar-32.png"
     />
-    <!--Googe Fontes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Prata&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
     <!--Instalação do tailwind-->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -30,7 +23,7 @@
         alt="logo da clínica"
       />
 
-      <nav class="hidden lg:flex font-bold items-center pr-5">
+      <nav class="font-inter hidden lg:flex font-bold items-center pr-5">
         <a
           href="#pilares"
           class="mr-5 hover:underline"
@@ -134,7 +127,7 @@
         class="flex flex-col min-h-screen justify-around p-3 lg:flex-row lg:pt-8"
       >
         <h2
-          class="tituloDeApresentacao my-3 mb-8 font-extrabold text-2xl sm:text-2xl px-2 lg:hidden"
+          class="font-prata my-3 mb-8 font-extrabold text-2xl sm:text-2xl px-2 lg:hidden"
         >
           Conheça a Dra. Gabriela Bezerra: Compromisso com a Excelência Médica
         </h2>
@@ -149,11 +142,11 @@
           class="p-4 lg:w-1/2 flex justify-center items-center flex-col lg:p-8"
         >
           <h1
-            class="tituloDeApresentacao my-3 text-left hidden lg:flex font-extrabold lg:text-2xl xl:text-3xl"
+            class="font-prata my-3 text-left hidden lg:flex font-extrabold lg:text-2xl xl:text-3xl"
           >
             Conheça a Dra. Gabriela Bezerra: Compromisso com a Excelência Médica
           </h1>
-          <p class="my-5 text-justify textoSobreADra lg:text-lg">
+          <p class="my-5 text-justify font-inter lg:text-lg">
             Dra. Gabriela Bezerra, médica formada na UFRN entre 2017 e 2023,
             destaca-se por sua abordagem holística no cuidado com o paciente.
             Cofundadora da Liga de Clínica Médica (Laclim) e ativa em ligas de
@@ -185,7 +178,7 @@
             class="mt-5 p-8 flex flex-col items-center justify-evenly lg:w-1/2"
           >
             <h2
-              class="pilarDedicacao font-extrabold mb-8 tracking-widest text-xl lg:text-2xl xl:text-3xl"
+              class="font-prata font-extrabold mb-8 tracking-widest text-xl lg:text-2xl xl:text-3xl"
             >
               Dedicação
             </h2>
@@ -209,9 +202,7 @@
       </section>
       <section class="flex h-auto bg-[#FFFFFF]">
         <div class="lg:hidden flex flex-col items-center p-8">
-          <h2
-            class="font-extrabold text-2xl mb-5 tracking-widest pilarEspiritualidade"
-          >
+          <h2 class="font-extrabold text-2xl mb-5 tracking-widest font-prata">
             Espiritualidade
           </h2>
           <img
@@ -245,7 +236,7 @@
             class="flex flex-col items-center p-10 lg:w-[600px] xl:w-[800px]"
           >
             <h2
-              class="mb-8 pilarEspiritualidade font-extrabold tracking-widest lg:text-2xl xl:text-3xl"
+              class="mb-8 font-prata font-extrabold tracking-widest lg:text-2xl xl:text-3xl"
             >
               Espiritualidade
             </h2>
@@ -283,7 +274,7 @@
             class="h-40 w-full bg-[#0a082d] lg:bg-gradient-to-b lg:from-[#1A264E] lg:to-[#0a082d] lg:rounded-br-xl flex justify-center items-center p-4"
           >
             <h2
-              class="text-white font-extrabold pilarCompromisso tracking-widest text-2xl lg:text-2xl xl:text-3xl"
+              class="text-white font-extrabold font-prata tracking-widest text-2xl lg:text-2xl xl:text-3xl"
             >
               Compromisso
             </h2>
