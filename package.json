@@ -1,0 +1,12 @@
+{
+  "name": "clinicadragabrielabezerra",
+  "version": "1.0.0",
+  "description": "Landing Page para apresentação dos serviços da Dra. Gabriela Bezerra",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Sabrina Bezerra",
+  "license": "Apache-2.0"
+}
