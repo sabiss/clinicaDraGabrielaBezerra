@@ -76,7 +76,7 @@
         id="mobileMenu"
         class="hidden lg:hidden fixed inset-0 bg-[#F5F5F5] z-50"
       >
-        <nav class="flex flex-col items-end p-4">
+        <nav class="flex flex-col items-end p-4 font-inter">
           <!-- Botão de fechar com ícone de xis -->
           <button
             id="fecharMobileMenu"
@@ -97,30 +97,30 @@
               ></path>
             </svg>
           </button>
-          <a
-            href="#pilares"
-            class="mb-4 hover:underline mb-3"
-            onclick="fecharMobileMenu()"
-            ><p>Pilares de Excelência</p></a
+          <p
+            class="mr-5 mb-5 hover:underline hover:cursor-pointer"
+            onclick="rolar('pilares'); fecharMobileMenu()"
           >
-          <a
-            href="#redes"
-            class="mb-4 hover:underline mb-3"
-            onclick="fecharMobileMenu()"
-            ><p>Me Acompanhe</p></a
+            Pilares de Excelência
+          </p>
+          <p
+            class="mr-5 mb-5 hover:underline hover:cursor-pointer"
+            onclick="rolar('pilares'); fecharMobileMenu()"
           >
-          <a
-            href="#localizacao"
-            class="mb-4 hover:underline mb-3"
-            onclick="fecharMobileMenu()"
-            ><p>Onde Estamos</p></a
+            Me Acompanhe
+          </p>
+          <p
+            class="mr-5 mb-5 hover:underline hover:cursor-pointer"
+            onclick="rolar('pilares'); fecharMobileMenu()"
           >
-          <a
-            href="#contatos"
-            class="p-2 bg-[#003921] rounded-xl text-white hover:bg-[#012D1A] font-bold"
-            onclick="fecharMobileMenu()"
-            ><p>Agendar Consulta</p></a
+            Onde Estamos
+          </p>
+          <p
+            class="p-2 bg-[#003921] rounded-xl text-white hover:bg-[#012D1A] hover:cursor-pointer"
+            onclick="rolar('contatos'); fecharMobileMenu()"
           >
+            Agendar Consulta
+          </p>
         </nav>
       </div>
     </header>
@@ -374,6 +374,7 @@
       </section>
       <footer
         class="bg-cover bg-[url('./assets/footer.jpeg')] h-36 w-full flex justify-center lg:justify-between lg:pr-10"
+        id="contatos"
       >
         <img
           src="./assets//logo2.png"
