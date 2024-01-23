@@ -3,3 +3,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .tituloPrincipal {
+    @apply font-prata font-extrabold tracking-widest;
+  }
+  .textoComum {
+    @apply text-justify lg:text-xl sm:text-xl font-inter;
+  }
+}
