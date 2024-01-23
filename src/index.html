@@ -331,7 +331,7 @@
           </div>
         </div>
         <div
-          class="hidden w-[59%] min-h-full lg:flex justify-center items-center"
+          class="hidden w-[59%] min-h-full lg:flex justify-center items-center bg-[#FFFFFF]"
         >
           <div
             class="flex flex-col justify-evenly items-center w-[500px] h-[500px]"
@@ -350,6 +350,56 @@
           </div>
         </div>
       </section>
+      <section
+        id="localizacao"
+        class="flex flex-col justify-around items-center bg-[#FFFFFF] py-8"
+      >
+        <h1
+          class="tituloPrincipal p-4 text-center border-dashed border-2 border-[#003921] text-xl lg:text-2xl xl:text-3xl"
+        >
+          Localização para Atendimentos
+        </h1>
+        <div class="flex justify-center py-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.1216522360764!2d-46.71783222538821!3d-23.599969663010306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce56dc138906d5%3A0xfa2f75da82a1dd3c!2sHospital%20Israelita%20Albert%20Einstein!5e0!3m2!1spt-BR!2sbr!4v1706021112071!5m2!1spt-BR!2sbr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="w-full"
+          ></iframe>
+        </div>
+      </section>
+      <footer
+        class="bg-cover bg-[url('./assets/footer.jpeg')] h-36 w-full flex justify-center lg:justify-between lg:pr-10"
+      >
+        <img
+          src="./assets//logo2.png"
+          class="object-contain h-full hidden lg:flex"
+          alt="logo da clínica escrito doutora gabriela no fundo verde claro"
+        />
+        <div class="mr-5 mt-5 flex flex-col justify-around items-start">
+          <h2 class="tituloPrincipal self-center lg:text-xl sm:text-xl">
+            Atendimento
+          </h2>
+          <div class="flex items-center justify-between">
+            <img
+              src="./assets/telefone.png"
+              alt="ícone de telefone na cor preta"
+            />
+            <p class="textoComum">(XX) xxxxx-xxxx</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <img
+              src="./assets/whatsapp.png"
+              alt="ícone do aplicativo whatsapp na cor preta"
+            />
+            <p class="textoComum">(XX) xxxxx-xxxx</p>
+          </div>
+        </div>
+      </footer>
     </main>
     <script src="./script.js"></script>
   </body>
